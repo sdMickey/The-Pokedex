@@ -1,7 +1,7 @@
-import 'dart:convert';
+// ignore_for_file: prefer_const_constructors, avoid_print
+
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'package:the_pokedex_app/services/pokemon.dart';
+import 'package:the_pokedex_app/services/pokemon_list.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,25 +11,48 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  late Pokemon poke;
+  List pokeList = [];
 
-  void getPoke() async {
-    Pokemon poke = Pokemon(url: 'https://pokeapi.co/api/v2/pokemon/25');
-    poke.getPokemon();
+  void getPokeList() async {
+    PokemonList pokemonList =
+        PokemonList(url: 'https://pokeapi.co/api/v2/pokemon/?limit=10');
+    await pokemonList.getPokemonList();
+    setState(() {
+      pokeList = pokemonList.list;
+    });
   }
 
   @override
   void initState() {
-    getPoke();
     // TODO: implement initState
     super.initState();
+
+    getPokeList();
   }
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Home Page'),
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: pokeList.length,
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+              onTap: () {
+                print(
+                    'you tapped #${pokeList[index]['id']}: ${pokeList[index]['name']}');
+              },
+              onLongPress: () {
+                print('you long pressed ${pokeList[index]['name']}');
+              },
+              title:
+                  Text('#${pokeList[index]['id']}: ${pokeList[index]['name']}'),
+              trailing: Image(
+                image: NetworkImage(pokeList[index]['sprite']),
+              ),
+            ),
+          );
+        },
       ),
     );
   }

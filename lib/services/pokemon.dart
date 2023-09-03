@@ -17,9 +17,7 @@ class Pokemon {
   late String evolutionChainUrl;
   late List evolutionChain = [];
 
-  Pokemon({
-    required this.url,
-  });
+  Pokemon({required this.url});
 
   Future<void> getPokemon() async {
     try {
@@ -61,15 +59,29 @@ class Pokemon {
 
       addEvolutionChain(pokemonEvolution);
 
-      print(
-          'name = $name \nid = $id \nheight = $height \nweight = $weight \ntypes = $types \nhp = $hp');
-      print(
-          'attack = $attack \ndefense = $defense \nspeed = $speed \nspriteUrl = $spriteUrl \nspeciesUrl = $speciesUrl');
-      print(
-          'evolutionChainUrl = $evolutionChainUrl \nevolutionChain = $evolutionChain');
+      // print(
+      //     'name = $name \nid = $id \nheight = $height \nweight = $weight \ntypes = $types \nhp = $hp');
+      // print(
+      //     'attack = $attack \ndefense = $defense \nspeed = $speed \nspriteUrl = $spriteUrl \nspeciesUrl = $speciesUrl');
+      // print(
+      //     'evolutionChainUrl = $evolutionChainUrl \nevolutionChain = $evolutionChain');
     } catch (e) {
       // ignore: avoid_print
       print('caught error: $e');
+
+      name = 'null';
+      id = 0;
+      height = 0;
+      weight = 0;
+      types = [];
+      hp = 0;
+      attack = 0;
+      defense = 0;
+      speed = 0;
+      spriteUrl = 'null';
+      speciesUrl = 'null';
+      evolutionChainUrl = 'null';
+      evolutionChain = [];
     }
   }
 }

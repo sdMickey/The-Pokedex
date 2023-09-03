@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:the_pokedex_app/services/pokemon_list.dart';
+import 'package:the_pokedex_app/services/constant_pokemon_list.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,24 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List pokeList = [];
-
-  void getPokeList() async {
-    PokemonList pokemonList =
-        PokemonList(url: 'https://pokeapi.co/api/v2/pokemon/?limit=10');
-    await pokemonList.getPokemonList();
-    setState(() {
-      pokeList = pokemonList.list;
-    });
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-
-    getPokeList();
-  }
+  List pokeList = pokemonListAll.sublist(0, 20);
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +22,7 @@ class _HomeState extends State<Home> {
           return Card(
             child: ListTile(
               onTap: () {
-                print(
-                    'you tapped #${pokeList[index]['id']}: ${pokeList[index]['name']}');
+                print('you tapped ${pokeList[index]['name']}');
               },
               onLongPress: () {
                 print('you long pressed ${pokeList[index]['name']}');

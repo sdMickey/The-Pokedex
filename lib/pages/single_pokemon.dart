@@ -11,37 +11,16 @@ class SinglePokemon extends StatefulWidget {
 }
 
 class _SinglePokemonState extends State<SinglePokemon> {
-  String pokeName = 'null';
-
-  void getPoke() async {
-    Pokemon poke = Pokemon(url: 'https://pokeapi.co/api/v2/pokemon/25');
-    await poke.getPokemon();
-    print('hmm, ${poke.name}');
-    setState(() {
-      pokeName = poke.name;
-    });
-  }
+  Pokemon poke = Pokemon(url: '');
 
   @override
   Widget build(BuildContext context) {
+    poke = ModalRoute.of(context)!.settings.arguments as Pokemon;
+
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(pokeName),
-            ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  pokeName = 'loading';
-                });
-                getPoke();
-              },
-              child: const Text('press me'),
-            ),
-          ],
-        ),
+        child: Text('Name: ${poke.name}'),
       ),
     );
   }

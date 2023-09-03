@@ -3,18 +3,18 @@ import 'dart:convert';
 
 class Pokemon {
   late String url;
-  late String name;
-  late int id;
-  late int height;
-  late int weight;
+  late String name = '';
+  late int id = 0;
+  late int height = 0;
+  late int weight = 0;
   late List types = [];
-  late int hp;
-  late int attack;
-  late int defense;
-  late int speed;
-  late String spriteUrl;
-  late String speciesUrl;
-  late String evolutionChainUrl;
+  late int hp = 0;
+  late int attack = 0;
+  late int defense = 0;
+  late int speed = 0;
+  late String spriteUrl = '';
+  late String speciesUrl = '';
+  late String evolutionChainUrl = '';
   late List evolutionChain = [];
 
   Pokemon({required this.url});

@@ -36,7 +36,6 @@ class _LoadingState extends State<Loading> {
     getPoke(url);
 
     return Scaffold(
-      // appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

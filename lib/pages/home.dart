@@ -32,7 +32,8 @@ class _HomeState extends State<Home> {
               title: Text(
                   '#${pokeList[index]['id']}: ${pokeList[index]['name']} ${pokeList[index]['types']}'),
               trailing: Image(
-                image: NetworkImage(pokeList[index]['sprite']),
+                image: NetworkImage(
+                    pokeList[index]['sp_sprite'] ?? pokeList[index]['sprite']),
               ),
             ),
           );

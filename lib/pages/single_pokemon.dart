@@ -20,7 +20,13 @@ class _SinglePokemonState extends State<SinglePokemon> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text('Name: ${poke.name}'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Name: ${poke.name}'),
+            Text('Url: ${poke.url}'),
+          ],
+        ),
       ),
     );
   }

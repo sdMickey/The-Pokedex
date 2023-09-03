@@ -9098,14 +9098,16 @@ List pokemonListAll = [
   {
     'id': 10128,
     'name': 'lurantis-totem',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['grass'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10128/'
   },
   {
     'id': 10129,
     'name': 'salazzle-totem',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['poison', 'fire'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10129/'
   },
@@ -9240,7 +9242,8 @@ List pokemonListAll = [
   {
     'id': 10146,
     'name': 'kommo-o-totem',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['dragon', 'fighting'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10146/'
   },
@@ -9295,14 +9298,16 @@ List pokemonListAll = [
   {
     'id': 10153,
     'name': 'araquanid-totem',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['water', 'bug'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10153/'
   },
   {
     'id': 10154,
     'name': 'togedemaru-totem',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric', 'steel'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10154/'
   },
@@ -9333,21 +9338,24 @@ List pokemonListAll = [
   {
     'id': 10158,
     'name': 'pikachu-starter',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10158/'
   },
   {
     'id': 10159,
     'name': 'eevee-starter',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['normal'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10159/'
   },
   {
     'id': 10160,
     'name': 'pikachu-world-cap',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10160/'
   },
@@ -9514,21 +9522,24 @@ List pokemonListAll = [
   {
     'id': 10181,
     'name': 'zygarde-10',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['dragon', 'ground'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10181/'
   },
   {
     'id': 10182,
     'name': 'cramorant-gulping',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['flying', 'water'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10182/'
   },
   {
     'id': 10183,
     'name': 'cramorant-gorging',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['flying', 'water'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10183/'
   },
@@ -9559,7 +9570,8 @@ List pokemonListAll = [
   {
     'id': 10187,
     'name': 'morpeko-hangry',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric', 'dark'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10187/'
   },
@@ -9598,7 +9610,8 @@ List pokemonListAll = [
   {
     'id': 10192,
     'name': 'zarude-dada',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['dark', 'grass'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10192/'
   },
@@ -10173,56 +10186,64 @@ List pokemonListAll = [
   {
     'id': 10264,
     'name': 'koraidon-limited-build',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['fighting', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10264/'
   },
   {
     'id': 10265,
     'name': 'koraidon-sprinting-build',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['fighting', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10265/'
   },
   {
     'id': 10266,
     'name': 'koraidon-swimming-build',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['fighting', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10266/'
   },
   {
     'id': 10267,
     'name': 'koraidon-gliding-build',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['fighting', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10267/'
   },
   {
     'id': 10268,
     'name': 'miraidon-low-power-mode',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10268/'
   },
   {
     'id': 10269,
     'name': 'miraidon-drive-mode',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10269/'
   },
   {
     'id': 10270,
     'name': 'miraidon-aquatic-mode',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10270/'
   },
   {
     'id': 10271,
     'name': 'miraidon-glide-mode',
-    'sprite': '',
+    'sprite':
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png',
     'types': ['electric', 'dragon'],
     'url': 'https://pokeapi.co/api/v2/pokemon/10271/'
   }

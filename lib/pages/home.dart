@@ -12,20 +12,20 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List pokeList = pokemonListAll.sublist(0, 20);
+  List pokeList = pokemonListAll;
 
-  Pokemon poke = Pokemon(url: '');
-  void getPoke(pokemonUrl) async {
-    Pokemon _poke = Pokemon(url: pokemonUrl);
-    await _poke.getPokemon();
-    // print('hmm, ${_poke.name}');
-    setState(() {
-      poke = _poke;
-    });
+  // Pokemon poke = Pokemon(url: '');
+  // void getPoke(pokemonUrl) async {
+  //   Pokemon _poke = Pokemon(url: pokemonUrl);
+  //   await _poke.getPokemon();
+  //   // print('hmm, ${_poke.name}');
+  //   setState(() {
+  //     poke = _poke;
+  //   });
 
-    // ignore: use_build_context_synchronously
-    Navigator.pushNamed(context, '/single_pokemon', arguments: poke);
-  }
+  //   // ignore: use_build_context_synchronously
+  //   Navigator.pushNamed(context, '/single_pokemon', arguments: poke);
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -37,15 +37,19 @@ class _HomeState extends State<Home> {
             child: ListTile(
               onTap: () {
                 print('you tapped ${pokeList[index]['name']}');
-                getPoke(pokeList[index]['url']);
+                Navigator.pushNamed(context, '/loading',
+                    arguments: pokeList[index]['url']);
+                // getPoke(pokeList[index]['url']);
               },
               onLongPress: () {
                 print('you long pressed ${pokeList[index]['name']}');
               },
-              title:
-                  Text('#${pokeList[index]['id']}: ${pokeList[index]['name']}'),
+              title: Text(
+                  '#${pokeList[index]['id']}: ${pokeList[index]['name']} ${pokeList[index]['types']}'),
               trailing: Image(
                 image: NetworkImage(pokeList[index]['sprite']),
+                // image: NetworkImage(
+                //     'https://img.pokemondb.net/sprites/home/normal/bulbasaur.png'),
               ),
             ),
           );

@@ -38,6 +38,7 @@ dependencies:
 
   http: ^1.1.0
   loading_animation_widget: ^1.2.0+4
+  another_flushbar: ^1.12.30
 
 dev_dependencies:
   flutter_test:
@@ -77,8 +78,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
+  fonts:
+    - family: Red Hat Text
+      fonts:
+        - asset: assets/fonts/RedHatText-Regular.ttf
+    # - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf

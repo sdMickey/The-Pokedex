@@ -49,7 +49,7 @@ class _LoadingState extends State<Loading> {
             ),
             const Expanded(
               flex: 1,
-              child: Text('Loading deatils...'),
+              child: Text('Loading details...'),
             ),
           ],
         ),

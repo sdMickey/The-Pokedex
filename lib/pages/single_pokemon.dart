@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:the_pokedex_app/services/constants.dart';
 import 'package:the_pokedex_app/services/pokemon.dart';
 
 class SinglePokemon extends StatefulWidget {
